@@ -27,8 +27,9 @@ end
 
 def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990})
   Movie.create do |m|
-    m.string :title
-    m.integer :release_date
+    m.title = args[:title]
+    m.release_date = args[:release_date]
+    m.save
   end
 end
 
