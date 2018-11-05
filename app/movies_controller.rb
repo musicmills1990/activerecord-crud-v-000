@@ -65,9 +65,6 @@ def can_be_found_updated_and_saved
   m.update(title: "Even Awesomer Flick")
   m.save
   m
-
-  __
-  __
 end
 
 def can_update_using_update_method
